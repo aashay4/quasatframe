@@ -3,6 +3,10 @@ const routes = [
   {
     path: '/',
     component: () => import('pages/Index.vue')
+  },
+  {
+    path: '/decimal-to-binary/',
+    component: () => import('pages/decimalbinary.vue')
   }
 ]
 
