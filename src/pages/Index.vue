@@ -13,6 +13,7 @@ If you want to convert text to binary, then enter any text into the text box and
           <button v-on:click="binarytotext()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Binary to Text</button>
           <button v-on:click="texttobinary()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Text to Binary</button>
           <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
+          <button v-on:click="clicked()">Click here</button>
             <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
           </div>
             <h1 class="w3-text-teal">Binary Translator</h1>
@@ -163,6 +164,9 @@ export default {
 				textresult += String.fromCharCode(parseInt(bintext.substr(z,8),2));
                                 this.ans = textresult;
         }
+      },
+      clicked() {
+        alert("clicked")
       },
    reset() {
      this.ans = '',
