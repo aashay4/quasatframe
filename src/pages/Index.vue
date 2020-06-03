@@ -12,8 +12,7 @@ If you want to convert text to binary, then enter any text into the text box and
           <button v-on:click="binarytotext()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Binary to Text</button>
           <button v-on:click="texttobinary()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Text to Binary</button>
           <button v-on:click="reset()" class="w3-button w3-border w3-teal w3-padding-large w3-hover-gray" style="display: inline-block">Reset</button><br><br>
-          <button v-on:click="clicked()">Click here</button>
-            <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
+          <div class="w3-border w3-padding-large w3-padding-32 w3-right" style="width: 100%; height: 110px; overflow: scroll;"><b>Conversion:</b> {{ ans }}</div><br><br>
           </div>
             <h1 class="w3-text-teal">Binary Translator</h1>
             <div>
@@ -85,6 +84,20 @@ If you want to convert text to binary, then enter any text into the text box and
           <p>The binary to text code conversion of 01000001 01000001 is AA. As mentioned above, take the first eight characters of the given number. So, the first eight characters of this number are 01000001. The binary to text conversion of this number is "A". Once you have converted this number, convert another number. The second set for conversion would be 01000001. Again, this is the same number and conversion would be "A". So, the final binary to text conversion of "01000001 01000001" would be "AA".</p>
         </div>
       </div>
+
+
+      <input type="radio" id="livepaper" @click="livePaper = true">
+<label for="livepaper">Livepaper</label>
+
+<input type="radio" id="normalpaper" @click="livePaper = false">
+<label for="normalpaper">Normalpaper</label>
+
+<div class="additional-inputs" v-if="livePaper">
+    <input type="text">
+    <input type="text">
+</div>
+
+
       <footer-app></footer-app>
   </div>
 </div>
@@ -97,7 +110,7 @@ import binarytranslator from '../components/binarytranslator.vue';
 export default {
 
   meta: {
-    title: 'Index Page',
+    title: 'Binary to Text Converter (Binary Translator)',
       description: { name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary code translator.' },
       keywords: { name: 'keywords', content: 'Quasar website' },
       equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
@@ -114,6 +127,7 @@ export default {
       text_value: null,
             ans: "",
             aaa: null,
+            livePaper: false
     }
   },
   methods: {
@@ -161,9 +175,6 @@ export default {
 				textresult += String.fromCharCode(parseInt(bintext.substr(z,8),2));
                                 this.ans = textresult;
         }
-      },
-      clicked() {
-        alert("clicked")
       },
    reset() {
      this.ans = '',
