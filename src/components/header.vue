@@ -19,21 +19,6 @@
   </div>
 </div>
 <!-- Sidebar -->
-<div v-show="isclose">
-  <nav class="w3-sidebarr w3-bar-block w3-large w3-theme-l5 w3-animate-right">
-    <a href="javascript:void(0)" v-on:click='isclose = !isclose' class="w3-left w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
-    <h4 class="w3-bar-item"><b>Options</b></h4>
-    <router-link to="/about-creator/" class="nav-link">
-    <a class="w3-bar-item w3-button w3-hover-black">About Creator</a>
-    </router-link>
-    <router-link to="/blog/" class="nav-link">
-    <a class="w3-bar-item w3-button w3-hover-black">Blog</a>
-    </router-link>
-    <router-link to="/write-for-us/" class="nav-link">
-    <a class="w3-bar-item w3-button w3-hover-black">Write for us</a>
-    </router-link>
-  </nav>
-</div>
 <div v-show="isOpen">
 <nav class="w3-sidebar w3-bar-block w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" v-on:click='isOpen = !isOpen' class="w3-right w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
@@ -106,11 +91,7 @@ export default {
   methods: {
     toggle: function () {
       this.isOpen = !this.open
-    },
-    smalltoggle: function () {
-      this.isclose = !this.close
     }
-
   }
 }
 </script>

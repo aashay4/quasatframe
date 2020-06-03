@@ -1,5 +1,6 @@
 <template>
   <div>
+    <header-app></header-app>
     <div class="w3-main" style="margin-left:250px"><br><br>
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
@@ -104,6 +105,7 @@ If you want to convert text to binary, then enter any text into the text box and
 </template>
 
 <script>
+import header from '../components/header.vue';
 import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
 
@@ -119,6 +121,7 @@ export default {
       rel: 'canonical', href: 'https://binarytotext.net/'
     },
   components:{
+    'header-app': header,
     'footer-app': footer,
     'binarytranslator': binarytranslator
   },
