@@ -2,7 +2,7 @@
 <div>
   <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a v-on:click='isOpen = !isOpen' class="w3-bar-item w3-button w3-left w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+    <a @click="isOpen = true" class="w3-bar-item w3-button w3-left w3-hover-white w3-large w3-theme-l1"><i class="fa fa-bars"></i></a>
     <router-link to="/" class="nav-link">
     <a class="w3-bar-item w3-button">Home</a>
     </router-link>
@@ -20,7 +20,7 @@
 <!-- Sidebar -->
 <div v-if="isOpen">
 <nav class="w3-sidebar w3-bar-block w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" v-on:click='isOpen = !isOpen' class="w3-right w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
+  <a @click="isOpen = false" class="w3-right w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
   <h4 class="w3-bar-item"><b>Converter</b></h4>
   <router-link to="/ascii-to-binary/" class="nav-link">
   <a class="w3-bar-item w3-button w3-hover-black">ASCII to Binary</a>
@@ -84,11 +84,6 @@ export default {
       text_value: null,
       total: null,
       ans: '',
-    }
-  },
-  methods: {
-    toggle: function () {
-      this.isOpen = !this.open
     }
   }
 }
