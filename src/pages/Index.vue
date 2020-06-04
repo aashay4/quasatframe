@@ -1,6 +1,5 @@
 <template>
   <div>
-    <header-app></header-app>
     <div class="w3-main" style="margin-left:250px"><br><br>
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
@@ -85,27 +84,12 @@ If you want to convert text to binary, then enter any text into the text box and
           <p>The binary to text code conversion of 01000001 01000001 is AA. As mentioned above, take the first eight characters of the given number. So, the first eight characters of this number are 01000001. The binary to text conversion of this number is "A". Once you have converted this number, convert another number. The second set for conversion would be 01000001. Again, this is the same number and conversion would be "A". So, the final binary to text conversion of "01000001 01000001" would be "AA".</p>
         </div>
       </div>
-
-
-      <input type="radio" id="livepaper" @click="livePaper = true">
-<label for="livepaper">Livepaper</label>
-
-<input type="radio" id="normalpaper" @click="livePaper = false">
-<label for="normalpaper">Normalpaper</label>
-
-<div class="additional-inputs" v-if="livePaper">
-    <input type="text">
-    <input type="text">
-</div>
-
-
       <footer-app></footer-app>
   </div>
 </div>
 </template>
 
 <script>
-import header from '../components/header.vue';
 import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
 
@@ -121,7 +105,6 @@ export default {
       rel: 'canonical', href: 'https://binarytotext.net/'
     },
   components:{
-    'header-app': header,
     'footer-app': footer,
     'binarytranslator': binarytranslator
   },
