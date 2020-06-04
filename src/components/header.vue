@@ -6,7 +6,6 @@
     <router-link to="/" class="nav-link">
     <a class="w3-bar-item w3-button">Home</a>
     </router-link>
-    <a v-on:click='isclose = !isclose' class="w3-bar-item w3-button w3-right w3-hover-white w3-hide-large w3-hide-medium w3-large w3-theme-l1" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
     <router-link to="/about-creator/" class="nav-link">
     <a class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Creator</a>
     </router-link>
@@ -19,7 +18,7 @@
   </div>
 </div>
 <!-- Sidebar -->
-<div v-show="isOpen">
+<div v-if="isOpen">
 <nav class="w3-sidebar w3-bar-block w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" v-on:click='isOpen = !isOpen' class="w3-right w3-xlarge w3-padding-large w3-hover-black"><i class="fa fa-remove"></i></a>
   <h4 class="w3-bar-item"><b>Converter</b></h4>
@@ -85,7 +84,6 @@ export default {
       text_value: null,
       total: null,
       ans: '',
-      isclose: false
     }
   },
   methods: {
