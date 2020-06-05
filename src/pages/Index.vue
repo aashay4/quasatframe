@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w3-main" style="margin-left:250px"><br><br>
+    <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Binary To Text</h1>
@@ -94,17 +94,19 @@ import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
 
 export default {
-
   meta: {
-    title: 'Binary to Text Converter (Binary Translator)',
-      description: { name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary code translator.' },
-      keywords: { name: 'keywords', content: 'Quasar website' },
-      equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
-    },
-    link: {
-      rel: 'canonical', href: 'https://binarytotext.net/'
-    },
-  components:{
+  // sets document title
+  title: 'Binary to Text Converter (Binary translator)',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Page 1' },
+    keywords: { name: 'keywords', content: 'Quasar website' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+},
+link: {rel: 'canonical', href: 'https://binarytotext.net/'},
+    components:{
     'footer-app': footer,
     'binarytranslator': binarytranslator
   },
