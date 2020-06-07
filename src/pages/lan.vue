@@ -90,15 +90,28 @@ import footer from '../components/footer.vue';
 
 export default {
 
+  meta: {
+  // sets document title
+  title: 'What is local area network? Find out definition, important commands to become networking expert',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Local area network is a network which connects various systems which are in the same network. Switches, routers, etnernet cables are the important components.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+ {rel: 'canonical', href: 'https://binarytotext.net/lan-local-area-network/'}
+]
+},
   metaInfo: {
-     title: 'What is local area network? Find out definition, important commands to become networking expert',
+     title: '',
      meta: [
 
        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Local area network is a network which connects various systems which are in the same network. Switches, routers, etnernet cables are the important components.'}
+       {name: 'description', content: ''}
      ],
      link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/lan-local-area-network/'}
+    {rel: 'canonical', href: ''}
   ]
    },
   components:{

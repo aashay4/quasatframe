@@ -1,23 +1,18 @@
 <template>
-  <div>
-    <div class="w3-top">
-    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-      <router-link to="/" class="nav-link">
-      <a class="w3-bar-item w3-button">B2T</a>
-      </router-link>
-      </div>
-  </div>
-  <div id="q-app">
-    <router-view />
-  </div>
-  </div>
-</template>
 
+<!-- Sidebar -->
+</template>
 <script>
 export default {
-  name: 'App'
+  data(){
+    return {
+        }
+},
+methods: {
+}
 }
 </script>
+
 <style scoped lang="scss">
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {

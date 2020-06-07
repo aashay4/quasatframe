@@ -66,19 +66,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: 'How to Write 3 in binary?',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: ''}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/3-in-binary/'}
+  meta: {
+  // sets document title
+  title: 'How to Write 3 in binary?',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: '' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/3-in-binary/'}
   ]
-   },
-
+  },
   components:{
     'footer-app': footer
   },

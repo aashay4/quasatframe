@@ -36,18 +36,19 @@
 import footer from '../components/footer.vue';
 
 export default {
-  metaInfo: {
-     title: 'QR Code Reader – Scan your QR Codes from this Online Scanner',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Best online QR code reader. Visit our website and scan QR codes very easily.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/qr-code-reader/'}
-  ]
-   },
-
+  meta: {
+  // sets document title
+  title: 'QR Code Reader – Scan your QR Codes from this Online Scanner',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Best online QR code reader. Visit our website and scan QR codes very easily.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+ {rel: 'canonical', href: 'https://binarytotext.net/qr-code-reader/'}
+]
+},
   components:{
     'footer-app': footer
   },

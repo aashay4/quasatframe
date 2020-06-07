@@ -69,18 +69,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: 'Hex to binary converter | convert base 16 to zeros and ones',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Convert hexadecimal to binary numbers with this tool. Enter a hex number and get the equivalent base 2 number easily with this amazing tool.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-binary-converter/'}
+  meta: {
+  // sets document title
+  title: 'Hex to binary converter | convert base 16 to zeros and ones',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Convert hexadecimal to binary numbers with this tool. Enter a hex number and get the equivalent base 2 number easily with this amazing tool.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-binary-converter/'}
   ]
-   },
+  },
   components:{
     'footer-app': footer
   },

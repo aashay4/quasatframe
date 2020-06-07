@@ -3,7 +3,7 @@
     <div class="w3-main" style="margin-left:250px">
       <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">Binary To Text</h1>
+          <h1 class="w3-text-teal">Binary To Text Converter (Translator)</h1>
           <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
 If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value with our binary translator.<br><br>
 </p>
@@ -100,12 +100,13 @@ export default {
   // optional; sets final title as "Index Page - My Website", useful for multiple level meta
   // meta tags
   meta: {
-    description: { name: 'description', content: 'Page 1' },
-    keywords: { name: 'keywords', content: 'Quasar website' },
+    description: { name: 'description', content: 'A binary to text converter and also binary translator. Just enter a binary code and convert it into the equivalent text values with this free binary code translator.' },
     equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
   },
+  link: [
+ {rel: 'canonical', href: 'https://binarytotext.net/'}
+]
 },
-link: {rel: 'canonical', href: 'https://binarytotext.net/'},
     components:{
     'footer-app': footer,
     'binarytranslator': binarytranslator

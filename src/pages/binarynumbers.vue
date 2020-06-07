@@ -147,18 +147,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: '8, 1, 16, 12, 100, 5, 7, 128, 42, 15, 256, 64, 11, 9, 20, 14, 32, 25 in binary numbers',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: ''}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/binary-numbers/'}
+  meta: {
+  // sets document title
+  title: '8, 1, 16, 12, 100, 5, 7, 128, 42, 15, 256, 64, 11, 9, 20, 14, 32, 25 in binary numbers',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: '' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/binary-numbers/'}
   ]
-   },
+  },
 
   components:{
     'footer-app': footer

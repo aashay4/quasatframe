@@ -64,18 +64,19 @@
 import footer from '../components/footer.vue';
 
 export default {
-
-  metaInfo: {
-     title: 'Binary to Octal Converter | Best Online Tool for Conversion',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Looking for a binary to octal converter? Try our online converter totally for free.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/binary-to-octal/'}
+  meta: {
+  // sets document title
+  title: 'Binary to Octal Converter | Best Online Tool for Conversion',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Looking for a binary to octal converter? Try our online converter totally for free.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/binary-to-octal/'}
   ]
-   },
+  },
   components:{
     'footer-app': footer
   },

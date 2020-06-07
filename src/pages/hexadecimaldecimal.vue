@@ -200,18 +200,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: 'Hexadecimal to Decimal Converter | Hex to base-10 Translator Online',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Best decimal to hexadecimal converter. Get the answers about the conversions and learn how to convert decimal number to a hexadecimal.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-decimal/'}
+  meta: {
+  // sets document title
+  title: 'Hexadecimal to Decimal Converter | Hex to base-10 Translator Online',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Best decimal to hexadecimal converter. Get the answers about the conversions and learn how to convert decimal number to a hexadecimal.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-decimal/'}
   ]
-   },
+  },
   components:{
     'footer-app': footer
   },

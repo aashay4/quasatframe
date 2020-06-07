@@ -66,19 +66,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: 'Convert 22 in Binary',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: ''}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/22inbinary/'}
+  meta: {
+  // sets document title
+  title: 'Convert 22 in Binary',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: '' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/22inbinary/'}
   ]
-   },
-
+  },
   components:{
     'footer-app': footer
   },

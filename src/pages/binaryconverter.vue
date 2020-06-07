@@ -65,18 +65,19 @@ import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
 
 export default {
-  metaInfo: {
-     title: 'Binary Converter, Convert from binary to dec, hex, oct and text values.',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: ''}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/binary-converter/'}
-  ]
-   },
-
+  meta: {
+  // sets document title
+  title: 'Binary Converter, Convert from binary to dec, hex, oct and text values.',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: '' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+ {rel: 'canonical', href: 'https://binarytotext.net/binary-converter/'}
+]
+},
   components:{
     'footer-app': footer,
     'binarytranslator': binarytranslator

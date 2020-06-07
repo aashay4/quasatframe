@@ -77,18 +77,19 @@
 import footer from '../components/footer.vue';
 
 export default {
-
-  metaInfo: {
-     title: 'Wake-on-lan detailed information. Code, difinition and magic packets',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'wake-on-lan widely popular among the techies is the protocol to wake a computer from over the network layer. Some call it wol. Get the detailed information about wake-on-lan here.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/wake-on-lan/'}
+  meta: {
+  // sets document title
+  title: 'Wake-on-lan detailed information. Code, difinition and magic packets',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'wake-on-lan widely popular among the techies is the protocol to wake a computer from over the network layer. Some call it wol. Get the detailed information about wake-on-lan here.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+  {rel: 'canonical', href: 'https://binarytotext.net/wake-on-lan/'}
   ]
-   },
+  },
   components:{
     'footer-app': footer
   },

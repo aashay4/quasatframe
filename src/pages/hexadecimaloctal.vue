@@ -152,18 +152,19 @@ import footer from '../components/footer.vue';
 import { BigNumber } from 'bignumber.js';
 
 export default {
-
-  metaInfo: {
-     title: 'Hexadecimal to Octal | Tool for Base 16 to 8 Number',
-     meta: [
-
-       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-       {name: 'description', content: 'Convert hexadecimal to octal numbers very easily with the help of our number converter. You can also convert octal to the hex numbers.'}
-     ],
-     link: [
-    {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-octal/'}
-  ]
-   },
+  meta: {
+  // sets document title
+  title: 'Hexadecimal to Octal | Tool for Base 16 to 8 Number',
+  // optional; sets final title as "Index Page - My Website", useful for multiple level meta
+  // meta tags
+  meta: {
+    description: { name: 'description', content: 'Convert hexadecimal to octal numbers very easily with the help of our number converter. You can also convert octal to the hex numbers.' },
+    equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+  },
+  link: [
+ {rel: 'canonical', href: 'https://binarytotext.net/hexadecimal-to-octal/'}
+]
+},
   components:{
     'footer-app': footer
   },
