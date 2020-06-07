@@ -97,7 +97,6 @@ If you want to convert text to binary, then enter any text into the text box and
 <script>
 import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
-import Adsense from 'vue-google-adsense/dist/Adsense.min.js'
 
 export default {
   meta: {
