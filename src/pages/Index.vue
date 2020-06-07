@@ -11,7 +11,7 @@
           data-ad-slot="1416243045"
           data-ad-format="auto"
           data-full-width-responsive="true">
-          </Adsense><br><br>
+          </Adsense><br><br><br><br>
 
           <p>To use the binary to text tool, enter a binary number into the box, click on the button and get the equivalent text into the output. For example, insert “01000011 01101111 01101110 01110110 01100101 01110010 01110100” into the box and click on the button, you will get the text string “Convert”.
 If you want to convert text to binary, then enter any text into the text box and click on the button “Text to binary”. You will get the equivalent binary value with our binary translator.<br><br>
@@ -101,7 +101,6 @@ If you want to convert text to binary, then enter any text into the text box and
 <script>
 import footer from '../components/footer.vue';
 import binarytranslator from '../components/binarytranslator.vue';
-import Adsense from 'vue-google-adsense/dist/Adsense.min.js'
 
 export default {
   meta: {
